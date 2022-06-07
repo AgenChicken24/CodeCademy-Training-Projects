@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Form a Story</title>
+</head>
+
+<body>
+    <section id="top">
+        <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-html-forms/formAStoryLogo.svg" alt="Form A Story Logo">
+    </section>
+
+    <section id="main">
+        <h1>Complete the Form -<br> Complete the Story!</h1>
+        <hr>
+        <!--Add your form below:-->
+        <form action="story.html" method="GET">
+            <label for="animal-1">Animal:</label>
+            <input type="text" id="animal-1" name="animal-1" placeholder="Cat" required>
+            <br>
+            <label for="animal-2">Another Animal:</label>
+            <input type="text" name="animal-2" id="animal-2" placeholder="Jirav" required>
+            <br>
+            <label for="animal-3">More Animal:</label>
+            <input type="text" id="animal-3" name="animal-3" placeholder="Na maikati" required>
+            <br>
+            <label for="adj-1">Adjective (past tense)</label>
+            <input type="text" name="adj-1" id="adj-1" minlength="1" maxlength="30" placeholder="Ot de da znam" required>
+            <br>
+            <label for="verb-1">Verb (ends in -ing):</label>
+            <input type="text" name="verb-1" id="verb-1" minlength="3" maxlength="40" placeholder="I tova ne go znam" required>
+            <br>
+            <label for="num-1">Number:</label>
+            <input type="number" id="num-1" name="num-1" min="10" max="1000" placeholder="10000000" required>
+            <br>
+            <input type="radio" id="yes" name="answer" value="yes" required>
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="answer" value="no">
+            <label for="no">No</label>
+            <br>
+            <label for="speed">Relative speed (ends in -er):</label>
+            <select name="speed" id="speed">
+             <option value="faster">Faster</option>
+             <option value="slow">Slow</option>
+             <option value="fast">Fast</option>
+             <option value="slowest">Slowest</option> 
+             <option value="namaikati">Na maikati putkata</option>
+          </select>
+            <br>
+            <label for="quote">Motivational Quote:</label>
+            <input type="text" id="quote" name="quote" required list="quote-choices">
+            <datalist id="quote-choices">
+              <option value="winner gets ice scream!"></option>
+              <option value="Na maikati putkata stiga tolkoz"></option>
+          </datalist>
+            <br>
+            <label for="message">Meaningful Message:</label>
+            <textarea name="message" id="message" cols="40" rows="8" placeholder="Ot de da znam tova kakvo e nqkakuv umrql tekst da ti eba maikata putko mrusna" required></textarea>
+            <input type="submit" value="Form My Story!">
+        </form>
+        <img src="C:\Users\kalom\Desktop\Fivem Server Logos\logo.png" alt="sad">
+
+    </section>
+</body>
+
+</html>

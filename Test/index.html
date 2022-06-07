@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <p>test</p>
+    <div id="background">
+        <div class="dialog">
+            <img id="logo" src="img/esx_identity.png" height="110px" width="332px">
+            <form id="register" name="register" action="#">
+                <input id="firstname" type="text" class="" name="firstname" placeholder="Име" onKeyDown="if(this.value.length==16 && event.keyCode!=8) return false;" onkeypress="if (isNumber(event) == true) return false;" onKeyUp="checkFirstName()" onmouseup="checkFirstName()">
+                <input id="lastname" type="text" class="" name="lastname" placeholder="Фамилия" onKeyDown="if(this.value.length==16 && event.keyCode!=8) return false;" onkeypress="if (isNumber(event) == true) return false;" onKeyUp="checkLastName()" onmouseup="checkLastName()">
+                <input id="dateofbirth" type="text" name="dateofbirth" placeholder="Дата на раждане." dateformat="MMM DD YYYY" min="01/01/1900" max="12/31/2020" onfocus="(this.type='date')">
+                <input id="height" type="text" placeholder="Височина 140-200 см" onKeyUp="checkHeight()" onmouseup="checkHeight()"> <br>
+                <center>
+                    <div class="radio-toolbar">
+                        <input type="radio" id="radiom" name="sex" value="m" checked>
+                        <label for="radiom">Мъж</label>
+
+                        <input type="radio" id="radiof" name="sex" value="f">
+                        <label for="radiof">Жена</label>
+                    </div>
+                    </>
+                    <!-- <div class="range-wrap" style="width: 80%;">
+                            <input type="range" id="height" class="range" min="140" max="200" value="48">
+                            <output class="bubble"></output>
+                        </div> -->
+                    <button id="submit" type="submit"><font size="5px">Създай</font></button>
+            </form>
+            <center>
+                <font size="2px" color="red">Ако бутонът 'Създай' не работи бъдете сигурни, че сте въвели всяко поле правилно.</font>
+            </center>
+        </div>
+    </div>
+</body>
+
+</html>

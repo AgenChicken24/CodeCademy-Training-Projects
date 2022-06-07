@@ -1,0 +1,77 @@
+body main .pickr-container {
+    /* margin: 0 auto; */
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+}
+
+.theme-container button {
+    font-family: 'digital', sans-serif;
+    font-weight: 500;
+    font-size: 0.95em;
+    color: #36425b;
+    outline: none;
+    background: #e4f1ff;
+    border: none;
+    border-bottom: 2px solid rgba(80, 139, 234, 0.67);
+    padding: 0.6em 0.8em 0.5em;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 0 0.5em;
+    opacity: 0.45;
+    text-transform: capitalize;
+}
+
+.theme-container button.active {
+    opacity: 1;
+}
+
+.theme-container h3 {
+    font-weight: 500;
+    color: #36425b;
+}
+
+/* .pickr-container, .pickr-container2 {
+    display: flex;
+    flex-direction: row;
+} */
+
+main {
+    background-size: cover;
+    position: relative;
+    background-image: url(dashColorBackground.png);
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 650px;
+}
+
+@font-face {
+    font-family: 'digital';
+    src: url("/fonts/digital.ttf");
+}
+
+.mainPicker [class^="colorText"] {
+    margin-top: 2px;
+    padding-right: 5px;
+    font-size: 22px;
+    font-weight: 600;
+    word-spacing: 5px;
+    letter-spacing: 0.2px;
+    color: rgb(255, 255, 255);
+    font-family: 'digital', sans-serif;
+}
+
+.pickr-container {
+    position: absolute;
+    top:12%;
+}
+
+.mainPicker {
+    /* padding: 5px; */
+}
+
+.mainPicker p, .mainPicker .pickr {
+    float:left;
+    display: inline;
+    margin-left: 10px;
+}

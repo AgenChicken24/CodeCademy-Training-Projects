@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Moto Fiber Home Page</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>`
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" type="image/ico" href="Logos/MFLogoTAB.png">
+</head>
+
+<body>
+    <nav>
+        <img class="HomeLogo" src="./Logos/logo.only.letters.png" alt="Failed to load">
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="#">Shop</a>
+                <ul>
+                    <li><a href="">Suzuki</a></li>
+                    <li><a href="">Kawasaki</a></li>
+                    <li><a href="">Honda</a></li>
+                    <li><a href="">Yamaha</a></li>
+                    <li><a href="">BMW</a></li>
+                    <li><a href="">Aprilia</a></li>
+                    <li><a href="">Ducati</a></li>
+                    <li><a href="">Carbon Parts</a></li>
+                </ul>
+            </li>
+            <li><a href="Pages/About/aboutus.html">About us</a></li>
+            <li><a href="Pages/Contacts/Contacts.html">Contacts</a></li>
+            <li><a href="Pages/FAQ/FAQ.html">FAQ</a></li>
+            <select class="selectpicker" data-width="fit">
+                <option data-content='<span class="flag-icon flag-icon-us"></span> English'></option>
+                <option  data-content='<span class="flag-icon flag-icon-bg"></span> Български'></option>
+            </select>
+        </ul>
+    </nav>
+    <img class="LineAboveMainPhoto" src="./Logos/banner.logo.png" alt="">
+    <div class="photos">
+        <div  class="brands"><img src="./Mark Photos/BRANDS1.png" alt="Brands"></div>
+        <div class="photosOne">
+            <a href=""><img src="./Mark Photos/Suzuki.png" alt="Suzuki"></a>
+            <a href=""><img src="./Mark Photos/Kawasaki.png" alt="Kawasaki"></a>
+            <a href=""><img src="./Mark Photos/Honda.png" alt="Honda"></a>
+            <a href=""><img src="./Mark Photos/Yamaha.png" alt="Yamaha"></a>
+        </div>
+        <div class="photosTwo">
+            <a href=""><img src="./Mark Photos/BMW.png" alt="BMW"></a>
+            <a href=""><img src="./Mark Photos/Aprilia.png" alt="Aprilia"></a>
+            <a href=""><img src="./Mark Photos/Ducati.png" alt="Ducati"></a>
+            <a href=""><img src="./Mark Photos/carbon.png" alt="Carbon Parts"></a>
+        </div>
+    </div>
+</body>
+<footer>
+    <h1>Contacts</h1>
+</footer>
+<script>
+    $(function(){
+        $('.selectpicker').selectpicker();
+    });
+</script>
+</html>
